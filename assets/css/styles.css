@@ -1,0 +1,331 @@
+
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --titleFontColor: rgb(16, 61, 124);
+    --DescriptionFontColor: rgb(39, 52, 148);
+    --textsmall: rgb(22, 31, 93);
+    --container1: #fcf9f8;
+    --container2: rgb(220, 235, 238);
+
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    background-color: var(--container1);
+}
+.container-2{
+    display: flex;
+    backdrop-filter: blur(10px);
+    /* background-image: url(/assets/images/garden.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: var(--container2);
+}
+.wrapper{
+    position: absolute;
+    width: 80%;
+    height: 80vh;
+    /* background-color: rgb(183, 204, 61); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: rgb(119, 178, 178); */
+
+
+
+}
+
+.card-wrapper{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: azure; */
+    width: 80%;
+    height: 60vh;
+    gap: 1.9rem;
+
+}
+
+.card-wrapper-2{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: azure; */
+    width: 80%;
+    height: 60vh;
+    gap: 1.9rem;
+    background-color: aquamarine
+
+}
+
+.image-wrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    flex-wrap: nowrap;
+    overflow:visible;
+}
+
+img{
+    width: 180px;
+    height: 30vh;
+}
+
+p{
+    text-align: center;
+}
+
+.title{
+    font-size: 1.9rem;
+    color: var(--titleFontColor);
+    font-weight: 400;
+}
+
+.details{
+    font-size: 1.0rem;
+    color: var(--titleFontColor);
+}
+.card-wrapper-2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.3rem;
+    width: 15%;
+    height: 60vh;
+    padding: 24px;
+    background-color: aquamarine
+}
+
+.profile{
+    position: relative;
+    width: 130px;
+    height: 15vh;
+    border-radius: 100%;
+    overflow: hidden;}
+
+.details-small-text{
+    font-size: 1.0rem;
+    color: var(--titleFontColor);
+}
+
+.name{
+    font-size: 1.0rem;
+    color: var(--titleFontColor);
+}
+
+.profile-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.container-photo{
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    gap: 1.2rem;
+    flex-wrap: nowrap;
+    overflow:visible;
+}
+
+
+
+.container-3{
+    display: flex;
+    backdrop-filter: blur(10px);
+    background-image: url(/assets/images/scott-webb-_K-QKkbn7Ds-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 90vh;
+    background-color: var(--container2);
+}
+.container-main{
+    z-index: 1000;
+    position: relative;
+    background-image: url(/assets/images/imag-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* justify-content: center; */
+    /* position: relative; */
+    width: 100%;
+    height: 100vh;
+    background-color: var(--container1);
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 50;
+    Height : 100%;
+    background-color: rgba(39, 40, 42, 0.3);
+}
+.wrap-navbar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-items:center;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    gap: 20rem
+    
+}
+.navbar{
+   display: flex;
+   flex-direction: row;
+    justify-content: space-between;
+
+    /* justify-items:center; */
+}
+
+.menu-item{
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    justify-content: space-between;
+}
+.wrap-navbar{
+    display: flex;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 1.0rem;
+    position: absolute;
+    z-index: 1000;
+}
+
+span{
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: whitesmoke;
+    z-index: 1000;
+    
+}
+
+.centered-text{
+    position: absolute;
+    font-size: 2.9rem;
+    color: whitesmoke;
+    font-weight: 600;
+    z-index: 1000;
+    left: 40%;
+
+}
+
+ .contact{
+    background-color: var(--container2);
+    z-index: 1000;
+}
+
+.col-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    z-index: 1000;
+}
+
+.col-icons{
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-self: baseline;
+    align-items: baseline;
+    margin-left: 100px;
+}
+
+input{
+    z-index: 1000;
+    width: 400px;
+    height: 30px;
+    border-style: none;
+
+}
+
+textarea{
+    z-index: 1000;
+    border-style: none;
+
+}
+input::placeholder{
+    z-index: 1000;
+    color: #999;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+textarea::placeholder{
+    z-index: 1000;
+    color: #999;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+p{
+    color: var(--DescriptionFontColor);
+    z-index: 1000;
+}
+
+.custom-button {
+    z-index: 1000;
+    background-color: #006e87;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+  }
+
+.chat::before{
+    z-index: 1000;
+    content: "💬 ";
+    font-size: 1.5rem;
+}
+
+.mail::before{
+    z-index: 1000;
+    content: "📩 ";
+    font-size: 1.5rem;
+}
+.location::before{
+    z-index: 1000;
+    content: "🗺️ ";
+    font-size: 1.5rem;
+}
+.phone::before{
+    z-index: 1000;
+    content: "📞 ";
+    font-size: 1.5rem;
+}
